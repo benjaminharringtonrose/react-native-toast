@@ -2,6 +2,7 @@ package com.reactnativetoast;
 
 import android.graphics.Color;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -26,6 +27,8 @@ public class ToastViewManager extends SimpleViewManager<View> {
 
     @ReactProp(name = "color")
     public void setColor(View view, String color) {
-        view.setBackgroundColor(Color.parseColor(color));
+      view.setBackgroundColor(Color.parseColor(color));
     }
+
+
 }

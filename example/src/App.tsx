@@ -1,12 +1,15 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
-import ToastViewManager from 'react-native-toast';
+import { Button, StyleSheet, View, Text, NativeModules } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ToastViewManager color="#32a852" style={styles.box} />
+      <Button
+        title="Show Toast"
+        onPress={() => NativeModules.ToastModule.show('Yip yip')}
+      />
+      <Text>{'Hello world'}</Text>
     </View>
   );
 }
