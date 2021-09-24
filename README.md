@@ -11,11 +11,14 @@ npm install react-native-toast
 ## Usage
 
 ```js
-import Toast from "react-native-toast";
+import ToastModule from "react-native-toast";
 
 // ...
 
-const result = await Toast.multiply(3, 7);
+<Button
+  title="Show Toast"
+  onPress={() => ToastModule.show('Yip yip')}
+/>
 ```
 
 ## Contributing
